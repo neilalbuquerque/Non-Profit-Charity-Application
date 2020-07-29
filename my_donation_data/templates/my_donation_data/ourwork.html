@@ -1,0 +1,158 @@
+{% extends 'my_donation_data/base.html' %}
+{% load static %}
+{% block stylesheets %}
+<style>
+
+body{
+  color: #251f44;
+}
+
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+</style>
+{% endblock stylesheets %}
+    
+{% block headscript %}
+{% endblock headscript %}
+
+{% block content %}
+    <main role="main">
+
+      <section class="jumbotron text-center" style="background-color: #E1FFC2;">
+          <h1 class="display-4">Our Work</h1>
+          <h3 class="text-center">The world is facing an unprecedented challenge with communities and economies everywhere affected by the growing COVID-19 pandemic. The world is coming together to combat the COVID-19 pandemic bringing governments, organizations from across industries and sectors and individuals together to help respond to this global outbreak. Our Foundation will aim at raising funds for the families who are facing the economic crisis who are unable to pay for basic necessities including rent, utilities, and food. For the following 2 months, High Five Foundation has done a set of charity events for the Families and Workers.</h3>
+      </section>
+      <div class="album py-5" style="background-color: #E1FFC2;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{% static 'my_donation_app/img/1.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Coronavirus Relief for NYC's Children and Families</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">12 days ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{% static 'my_donation_app/img/2.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Feed migrant workers & daily wagers in India</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{% static 'my_donation_app/img/3.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Help a Child: Provide Access to Water in Nigeria</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">25 days ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{% static 'my_donation_app/img/4.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">COVID-19 Aid for Education in Afghanistan</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">15 days ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{% static 'my_donation_app/img/5.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Coronavirus Relief Support for Bangladesh</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">9 days ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{% static 'my_donation_app/img/6.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Food & fruit for 1,000 children in Latin America</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">17 days ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{% static 'my_donation_app/img/7.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Food & fruit for 1,000 children in Latin America</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">10 days ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{% static 'my_donation_app/img/8.png' %}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Coronavirus Relief Aid Distribution</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">1 month 3 days ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{% static 'my_donation_app/img/9.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Nepal Emergency COVID-19 fund</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">2 months ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+{% endblock %}
+ 
+{% block script %}
+{% endblock %}
